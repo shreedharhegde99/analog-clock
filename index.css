@@ -1,0 +1,30 @@
+body{
+  background-color: rgb(0, 128, 115);
+  margin:150px 0px 0px 200px
+}
+
+
+
+.hand{
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.hand--thick{
+  stroke-width: 7;
+}
+
+.hand--second{
+  stroke:rgb(30, 255, 0)
+}
+.minute--design{
+   stroke: #ff0095;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+.hour--design{
+  stroke: #040cf3;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
