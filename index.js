@@ -7,15 +7,29 @@ function showTime() {
 
   const hour = date.getHours() + date.getMinutes() / 60;
   const minute = date.getMinutes() + date.getSeconds() / 60;
-  const second = date.getSeconds() + date.getMilliseconds() / 1000;
+  const second = date.getSeconds();
 
   hoursElement.setAttribute("transform", `rotate(${30 * hour})`);
   minutesElement.setAttribute("transform", `rotate(${6 * minute})`);
   secondsElement.setAttribute("transform", `rotate(${6 * second})`);
 
-  // showTime();
-  // console.log(`${hour}    ${minute} ${second}`);
-  // time();
+  // console.log(date.toLocaleTimeString());
 }
 
-window.onload = () => setInterval(showTime);
+function displayTime() {
+  let display = document.querySelector(".display");
+  const date = new Date();
+  const localHours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+
+  const hours = localHours >= 12 ? localHours - 12 : localHours;
+  const dayTime = localHours <= 12 ? "AM" : "PM";
+
+  // console.log(hours + dayTime, minutes, seconds);
+  display.textContent = `${hours} : ${minutes}  : ${seconds} ${dayTime}`;
+}
+
+window.onload = () => {
+  return setInterval(showTime, 1000), setInterval(displayTime, 1000);
+}; 
