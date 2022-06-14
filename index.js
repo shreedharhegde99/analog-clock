@@ -27,7 +27,10 @@ function displayTime() {
   const dayTime = localHours <= 12 ? "AM" : "PM";
 
   // console.log(hours + dayTime, minutes, seconds);
-  display.textContent = `${hours} : ${minutes}  : ${seconds} ${dayTime}`;
+  let hr = hours < 10 ? `0${hours}` : hours;
+	let min = minutes < 10 ? `0${minutes}` : minutes;
+	let sec = seconds < 10 ? `0${seconds}` : seconds;
+	display.textContent = `${hr} : ${min}  : ${sec} ${dayTime}`;
 }
 
 window.onload = () => {
