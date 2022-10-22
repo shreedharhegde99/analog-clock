@@ -1,3 +1,6 @@
+body {
+  background-color: #141414e0;
+}
 .hand {
   stroke: #ffffff;
   stroke-width: 2;
@@ -13,7 +16,6 @@
 }
 .minute--design {
   stroke-width: 5;
-
   stroke: #001affb3;
 }
 .hour--design {
@@ -26,13 +28,11 @@
 .link:hover {
   color: #001affb3;
 }
-body {
-  background-color: rgba(152, 243, 223, 0.576);
-}
 
 .display {
   font-weight: 800;
   font-size: 25px;
+  color: beige;
 }
 
 .time-container {
@@ -52,6 +52,19 @@ body {
   padding: 2rem;
   display: flex;
   justify-content: center;
+  color: aliceblue;
   /* align-items: center; */
   margin: auto;
+}
+
+.clock-background {
+  fill: #b8b8b8b9;
+}
+
+.hour_marker {
+  stroke: #292929;
+}
+
+.clock-container text {
+  font-size: 1.5rem;
 }
