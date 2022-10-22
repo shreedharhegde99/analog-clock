@@ -11,6 +11,12 @@
     <div class="time-container">
       <div class="clock-container">
         <svg width="200" height="200" viewBox="-100 -100 200 200">
+          <circle r="97" class="clock-background" />
+          <text x="0" y="0" font-size="20px" dx="-10px" dy="-55px">12</text>
+          <text x="0" y="0" font-size="20px" dx="60px" dy="6px">3</text>
+          <text x="0" y="0" font-size="20px" dx="-5px" dy="70px">6</text>
+          <text x="0" y="0" font-size="20px" dx="-70px" dy="6px">9</text>
+
           <circle
             class="minute_marker"
             r="90"
@@ -24,15 +30,14 @@
 
           <circle
             class="hour_marker"
-            r="90"
+            r="88"
             ;
             pathlength="60"
             ;
-            stroke="#ff0000"
             fill="transparent"
-            stroke-width="7"
-            stroke-dasharray="0.2 4.8"
-            stroke-dashoffset="0.1"
+            stroke-width="12"
+            stroke-dasharray="0.5 4.5"
+            stroke-dashoffset="0.3"
           />
 
           <g class="hour_hand">
@@ -51,7 +56,7 @@
               x1="0"
               y1="20"
               x2="0"
-              y2="-70"
+              y2="-80"
             />
           </g>
 
