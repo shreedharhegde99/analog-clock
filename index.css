@@ -30,14 +30,12 @@ body {
   background-color: rgba(152, 243, 223, 0.576);
 }
 
-.display{
+.display {
   font-weight: 800;
   font-size: 25px;
- 
 }
 
-
-.time-container{
+.time-container {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -46,44 +44,14 @@ body {
   height: 50vh;
 }
 
-
-.clock-container{
+.clock-container {
   padding: 1rem;
 }
 
-
-.credit{
-  padding:2rem;
+.credit {
+  padding: 2rem;
   display: flex;
   justify-content: center;
   /* align-items: center; */
   margin: auto;
 }
-/* body{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-} */
-
-
-/* @media only screen and (max-width: 600px) {
-  body {
-    margin: 50px 30px 0px 55px;
-  }
-
-  .display{
-     margin-top: 50px;
-  margin-left: 40px;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  body {
-    margin: 50px 30px 0px 500px;
-  }
-
-  .display{
-     margin-top: 50px;
-  margin-left: 40px;
-  }
-} */
