@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Analog Clock</title>
-		<link rel="stylesheet" href="./index.css" />
-	</head>
-	<body>
-		<div class="time-container">
-			<div class="clock-container">
-				<svg width="200" height="200" viewBox="-100 -100 200 200">
-					<circle
-						class="minute_marker"
-						r="90"
-						pathlength="60"
-						fill="transparent"
-						stroke="#0f0e0e"
-						stroke-width="7"
-						stroke-dasharray="0.2 0.8"
-						stroke-dashoffset="0.1"
-					/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="time-container">
+      <div class="clock-container">
+        <svg width="200" height="200" viewBox="-100 -100 200 200">
+          <circle
+            class="minute_marker"
+            r="90"
+            pathlength="60"
+            fill="transparent"
+            stroke="#0f0e0e"
+            stroke-width="7"
+            stroke-dasharray="0.2 0.8"
+            stroke-dashoffset="0.1"
+          />
 
-					<circle
-						class="hour_marker"
-						r="90"
-						;
-						pathlength="60"
-						;
-						stroke="#ff0000"
-						fill="transparent"
-						stroke-width="7"
-						stroke-dasharray="0.2 4.8"
-						stroke-dashoffset="0.1"
-					/>
+          <circle
+            class="hour_marker"
+            r="90"
+            ;
+            pathlength="60"
+            ;
+            stroke="#ff0000"
+            fill="transparent"
+            stroke-width="7"
+            stroke-dasharray="0.2 4.8"
+            stroke-dashoffset="0.1"
+          />
 
-					<g class="hour_hand">
-						<line
-							class="hand hand--thick hour--design"
-							x1="0"
-							y1="20"
-							x2="0"
-							y2="-50"
-						/>
-					</g>
+          <g class="hour_hand">
+            <line
+              class="hand hand--thick hour--design"
+              x1="0"
+              y1="20"
+              x2="0"
+              y2="-50"
+            />
+          </g>
 
-					<g class="minute_hand">
-						<line
-							class="hand hand--thick minute--design"
-							x1="0"
-							y1="20"
-							x2="0"
-							y2="-70"
-						/>
-					</g>
+          <g class="minute_hand">
+            <line
+              class="hand hand--thick minute--design"
+              x1="0"
+              y1="20"
+              x2="0"
+              y2="-70"
+            />
+          </g>
 
-					<g class="second_hand">
-						<line class="hand hand--second" x1="0" y1="12" x2="0" y2="-80" />
-					</g>
-				</svg>
-			</div>
-			<div class="display"></div>
-		</div>
+          <g class="second_hand">
+            <line class="hand hand--second" x1="0" y1="12" x2="0" y2="-80" />
+          </g>
+        </svg>
+      </div>
+      <div class="display"></div>
+    </div>
 
-		<div class="credit">
-			<div>
-				<span> Thanks to </span>
-				<span>
-					<a
-						class="link"
-						href="https://www.freecodecamp.org/news/author/hunor/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<strong>Hunor Márton Borbély</strong>
-					</a>
-				</span>
-			</div>
-		</div>
+    <div class="credit">
+      <div>
+        <span> Thanks to </span>
+        <span>
+          <a
+            class="link"
+            href="https://www.freecodecamp.org/news/author/hunor/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Hunor Márton Borbély</strong>
+          </a>
+        </span>
+      </div>
+    </div>
 
-		<!-- javascript -->
-		<script type="text/javascript" src="./index.js"></script>
-	</body>
+    <!-- javascript -->
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
 </html>
