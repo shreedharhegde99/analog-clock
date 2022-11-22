@@ -1,5 +1,8 @@
 ## SVG CLOCK
 
-A simple analog clock created using Html, Css, and Javascript.
+## Tech stacks 
+- HTML
+- CSS
+- Javascript
 
 <img src="assets/clock.png" />
